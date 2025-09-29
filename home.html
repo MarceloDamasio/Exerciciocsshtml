@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABIT - Navegue por tópicos de interesse</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="/" class="logo">HABIT</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html" class="category-tag">Início</a></li>
+                    <li><a href="paginas.html" class="category-tag active">Páginas</a></li>
+                    <li><a href="destaques.html" class="category-tag">Destaques</a></li>
+                    <li><a href="newsletter.html" class="category-tag">Assinar</a></li>
+                    <li><a href="adminCategorias.html" class="category-tag">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form class="search-form">
+                    <label for="search-input" class="visually-hidden">Pesquisar</label>
+                    <input type="search" id="search-input" placeholder="Buscar..." aria-label="Pesquisar no site">
+                    <button type="submit" aria-label="Botão de Pesquisa">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </form>
+                <a href="login.html" class="button button-outline">Entrar</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topics-section">
+            <div class="container">
+                <h1 class="section-title">Navegue por tópicos de interesse</h1>
+                <p class="section-description">Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+                <div class="topic-actions">
+                    <a href="#" class="button button-primary">Explorar categorias</a>
+                    <a href="newsletter.html" class="button button-secondary">Assine a newsletter</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-categories-section">
+            <div class="container">
+                <h2 class="section-subtitle">Categorias Populares</h2>
+                <div class="categories-grid">
+                    <article class="category-card">
+                        <h3>Work</h3>
+                    </article>
+                    <article class="category-card">
+                        <h3>Books</h3>
+                    </article>
+                    <article class="category-card">
+                        <h3><a href="techno.html">Techno</a></h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="all-categories-section">
+            <div class="container">
+                <h2 class="section-subtitle">Todas as Categorias</h2>
+                <div class="all-categories-grid">
+                    <a href="#" class="category-tag">Negócios</a>
+                    <a href="techno.html" class="category-tag">Techno</a>
+                    <a href="#" class="category-tag">Produtividade</a>
+                    <a href="#" class="category-tag">Filmes</a>
+                    <a href="#" class="category-tag">Lifestyle</a>
+                    <a href="#" class="category-tag">Educação</a>
+                    <a href="#" class="category-tag">Mailing</a>
+                    <a href="#" class="category-tag">eCommerce</a>
+                    <a href="#" class="category-tag">Alimentação</a>
+                    <a href="#" class="category-tag">Social</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-and-editor-picks">
+            <div class="container main-content-grid">
+                <div class="featured-posts">
+                    <h2 class="section-subtitle">Postagens em Destaque</h2>
+                    <article class="post-card">
+                        <div class="post-thumbnail"></div>
+                        <div class="post-info">
+                            <p class="post-meta">31 Jul 2025 • Destaque</p>
+                            <h3><a href="#">Erros de Design que Todos Devem Evitar</a></h3>
+                            <p class="post-read-time">3 min de leitura</p>
+                        </div>
+                    </article>
+                    <article class="post-card">
+                        <div class="post-thumbnail"></div>
+                        <div class="post-info">
+                            <p class="post-meta">31 Jul 2025 • Destaque</p>
+                            <h3><a href="#">As Maiores Empresas por Receita</a></h3>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="editor-picks">
+                    <h2 class="section-subtitle">Escolhas do Editor</h2>
+                    <ul>
+                        <li><a href="#">O uso negativo da internet</a></li>
+                        <li><a href="#">O segredo do brainstorm</a></li>
+                        <li><a href="#">Escalar para pequenos negócios</a></li>
+                        <li><a href="#">O futuro do trabalho remoto</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Lamp</a></li>
+                    <li><a href="#">Books</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">© 2025 Meu Site • Meu site</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABIT - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Certifique-se de que seu CSS está neste arquivo -->
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo">HABIT</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html" class="category-tag">Início</a></li>
+                    <li><a href="#">Páginas</a></li>
+                    <li><a href="destaques.html" class="category-tag">Destaques</a></li>
+                    <li><a href="newsletter.html" class="category-tag">Assinar</a></li>
+                    <li><a href="adminCategorias.html" class="category-tag">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar" aria-label="Buscar no site">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.085.12l3.957 3.957a1 1 0 0 0 1.414-1.414zm-5.908 1.155A5.5 5.5 0 1 1 10.5 5.5a5.5 5.5 0 0 1-4.666 5.999"/>
+                        </svg>
+                    </button>
+                </form>
+                <button class="button button-outline">Entrar</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="adminCategorias.html">Categorias</a></li>
+                <li><a href="adminCriarPost.html" class="active">Criar Post</a></li>
+                <li><a href="#">Escolhas do Editor</a></li>
+                <li><a href="#">Usuários</a></li>
+                <li><a href="#">Fila de revisão</a></li>
+                <li><a href="#">Fila de comentários</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-value">128</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">54k</div>
+                    <div class="stat-label">Visualizações</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">12k</div>
+                    <div class="stat-label">Inscritos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">7</div>
+                    <div class="stat-label">Pendências</div>
+                </div>
+            </section>
+
+            <section class="create-post">
+                <div class="categories-management">
+                    <h2>Criar Post</h2>
+                    <input type="text" placeholder="Título" class="post-title-input">
+                    <textarea placeholder="Escreva aqui... (Editor simulador)" rows="10" class="post-editor"></textarea>
+                    
+                    <div class="post-options">
+                        <input type="text" placeholder="Categorias e tags" class="categories-tags-input">
+                        <div class="upload-image-container">
+                            <label for="coverImageUpload" class="button button-secondary">Upload da imagem de capa</label>
+                            <input type="file" id="coverImageUpload" class="visually-hidden">
+                        </div>
+                    </div>
+
+                    <div class="post-actions">
+                        <button class="button button-secondary">Salvar rascunho</button>
+                        <button class="button button-secondary">Enviar para revisão</button>
+                        <button class="button button-primary">Publicar (admin)</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Lamp</a></li>
+                    <li><a href="#">Books</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy; 2025 Meu Site. Meu site
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

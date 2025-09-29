@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABIT - Assine a newsletter</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Certifique-se de que o CSS está em um arquivo chamado style.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo">HABIT</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html" class="category-tag">Início</a></li>
+                    <li><a href="#">Páginas</a></li>
+                    <li><a href="destaques.html" class="category-tag">Destaques</a></li>
+                    <li><a href="newsletter.html" class="category-tag">Assinar</a></li>
+                    <li><a href="adminCategorias.html" class="category-tag">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form class="search-form" role="search">
+                    <label for="search-input" class="visually-hidden">Buscar</label>
+                    <input type="search" id="search-input" placeholder="Buscar..." aria-label="Buscar no site">
+                    <button type="submit" aria-label="Buscar">
+                        <!-- Ícone de busca, você pode usar um SVG aqui -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </form>
+                <a href="#" class="button button-outline">Buscar</a>
+                <a href="#" class="button button-primary">Entrar</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-card">
+                    <h2>Assine a newsletter</h2>
+                    <form class="newsletter-form">
+                        <label for="email-input" class="visually-hidden">E-mail</label>
+                        <input type="email" id="email-input" placeholder="E-mail" required aria-label="Seu endereço de e-mail">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="privacy-agreement" required>
+                            <label for="privacy-agreement">Concordo em receber comunicações e li a política de privacidade.</label>
+                        </div>
+                        <button type="submit" class="button button-primary">Assinar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Placeholder para as tags de categoria, como mostrado na imagem inferior -->
+        <section class="bottom-categories-section">
+            <div class="container">
+                <div class="all-categories-grid">
+                    <a href="#" class="category-tag">Instagram</a>
+                    <a href="#" class="category-tag">Work</a>
+                    <a href="#" class="category-tag">Bags</a>
+                    <a href="#" class="category-tag">Lamp</a>
+                    <a href="#" class="category-tag">Books</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="copyright">
+                © 2025 Meu Site • Meu site
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
