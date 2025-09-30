@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HABIT - Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,32 +12,30 @@
             <a href="#" class="logo">HABIT</a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="home.html" class="category-tag">Início</a></li>
+                    <li><a href="home.html">Início</a></li>
                     <li><a href="paginas.html">Páginas</a></li>
-                    <li><a href="destaques.html" class="category-tag">Destaques</a></li>
-                    <li><a href="newsletter.html" class="category-tag">Assinar</a></li>
-                    <li><a href="adminCategorias.html" class="category-tag">Admin</a></li>
+                    <li><a href="destaques.html">Destaques</a></li>
+                    <li><a href="newsletter.html">Assinar</a></li>
+                    <li><a href="adminCategorias.html">Admin</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
                 <form class="search-form">
                     <input type="search" placeholder="Buscar..." aria-label="Buscar no site">
                     <button type="submit" aria-label="Pesquisar">
-                        <!-- Ícone de busca (SVG ou Font Awesome) -->
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     </button>
                 </form>
-                <a href="#" class="button button-outline">Buscar</a>
-                <a href="login.html" class="button button-primary">Entrar</a>
+                <a href="login.html" class="button button-outline">Entrar</a>
             </div>
         </div>
     </header>
 
-    <div class="main-wrapper container">
+    <div class="container main-wrapper">
         <aside class="sidebar">
-            <nav class="menu">
-                <h2>Menu</h2>
-                <ul>
+            <h2 class="visually-hidden">Menu de Navegação</h2>
+            <nav>
+                <ul class="sidebar-menu">
                     <li><a href="adminCategorias.html">Categorias</a></li>
                     <li><a href="adminCriarPost.html">Criar Post</a></li>
                     <li><a href="adminEscolhasEditor.html">Escolhas do Editor</a></li>
@@ -67,51 +62,68 @@
                 </div>
                 <div class="stat-card">
                     <span class="stat-value">7</span>
-                    <span class="stat-label">Tendências</span>
+                    <span class="stat-label">Pendências</span>
                 </div>
             </section>
 
             <section class="categories-management">
-                <h2>Categorias</h2>
+                <h2>Fila de revisão</h2>
                 <div class="search-category">
-                    <input type="search" placeholder="Buscar categorias..." aria-label="Buscar categorias">
-                    <button class="button button-primary">Buscar</button>
+                    <input type="search" placeholder="Buscar posts..." aria-label="Buscar posts na fila de revisão">
                 </div>
-
+                
                 <div class="category-list">
                     <div class="category-item">
-                        <span class="category-name">Categoria #1</span>
+                        <span class="category-name">Título</span>
+                        <span class="category-name">Autor</span>
+                        <span class="category-name">Status</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <span class="category-name">Ações</span>
                         </div>
                     </div>
                     <div class="category-item">
-                        <span class="category-name">Categoria #2</span>
+                        <span class="category-name">Post #1</span>
+                        <span class="category-name">Autor 1</span>
+                        <span class="category-name">Em revisão</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-primary">Aprovar</button>
+                            <button class="button button-secondary">Reprovar</button>
                         </div>
                     </div>
                     <div class="category-item">
-                        <span class="category-name">Categoria #3</span>
+                        <span class="category-name">Post #2</span>
+                        <span class="category-name">Autor 2</span>
+                        <span class="category-name">Em revisão</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-primary">Aprovar</button>
+                            <button class="button button-secondary">Reprovar</button>
                         </div>
                     </div>
                     <div class="category-item">
-                        <span class="category-name">Categoria #4</span>
+                        <span class="category-name">Post #3</span>
+                        <span class="category-name">Autor 3</span>
+                        <span class="category-name">Em revisão</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-primary">Aprovar</button>
+                            <button class="button button-secondary">Reprovar</button>
                         </div>
                     </div>
                     <div class="category-item">
-                        <span class="category-name">Categoria #5</span>
+                        <span class="category-name">Post #4</span>
+                        <span class="category-name">Autor 4</span>
+                        <span class="category-name">Em revisão</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-primary">Aprovar</button>
+                            <button class="button button-secondary">Reprovar</button>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <span class="category-name">Post #5</span>
+                        <span class="category-name">Autor 5</span>
+                        <span class="category-name">Em revisão</span>
+                        <div class="category-actions">
+                            <button class="button button-primary">Aprovar</button>
+                            <button class="button button-secondary">Reprovar</button>
                         </div>
                     </div>
                 </div>
@@ -130,7 +142,6 @@
                     <li><a href="#">Books</a></li>
                 </ul>
             </nav>
-            <p class="copyright">&copy; 2025 Meu Site • Meu site</p>
         </div>
     </footer>
 </body>

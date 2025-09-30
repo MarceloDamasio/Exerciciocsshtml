@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABIT - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo">HABIT</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="paginas.html">Páginas</a></li>
+                    <li><a href="destaques.html">Destaques</a></li>
+                    <li><a href="newsletter.html">Assinar</a></li>
+                    <li><a href="adminCategorias.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit" class="visually-hidden">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button type="submit" class="button">Buscar</button>
+                </form>
+                <a href="login.html" class="button button-outline">Entrar</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-wrapper">
+        <aside class="sidebar">
+            <h2 class="visually-hidden">Menu</h2>
+            <div class="menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="adminCategorias.html">Categorias</a></li>
+                    <li><a href="adminCriarPost.html">Criar Post</a></li>
+                    <li><a href="adminEscolhasEditor.html">Escolhas do Editor</a></li>
+                    <li><a href="adminUsers.html">Usuários</a></li>
+                    <li><a href="adminFilaRevisao.html">Fila de revisão</a></li>
+                    <li><a href="adminFilaComentario.html">Fila de comentários</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-value">128</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">54k</div>
+                    <div class="stat-label">Visualizações</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">12k</div>
+                    <div class="stat-label">Inscritos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">7</div>
+                    <div class="stat-label">Pendências</div>
+                </div>
+            </section>
+
+            <section class="categories-management">
+                <h2>Fila de comentários</h2>
+                <div class="search-category">
+                    <input type="search" placeholder="Buscar comentários..." aria-label="Buscar comentários">
+                </div>
+
+                <div class="comment-queue-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Autor</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="comment-title">Comentário #1</td>
+                                <td class="comment-author">Usuário 1</td>
+                                <td class="comment-status">Em revisão</td>
+                                <td class="comment-actions">
+                                    <button class="button button-secondary">Aprovar</button>
+                                    <button class="button button-outline">Reprovar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment-title">Comentário #2</td>
+                                <td class="comment-author">Usuário 2</td>
+                                <td class="comment-status">Em revisão</td>
+                                <td class="comment-actions">
+                                    <button class="button button-secondary">Aprovar</button>
+                                    <button class="button button-outline">Reprovar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment-title">Comentário #3</td>
+                                <td class="comment-author">Usuário 3</td>
+                                <td class="comment-status">Em revisão</td>
+                                <td class="comment-actions">
+                                    <button class="button button-secondary">Aprovar</button>
+                                    <button class="button button-outline">Reprovar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment-title">Comentário #4</td>
+                                <td class="comment-author">Usuário 4</td>
+                                <td class="comment-status">Em revisão</td>
+                                <td class="comment-actions">
+                                    <button class="button button-secondary">Aprovar</button>
+                                    <button class="button button-outline">Reprovar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment-title">Comentário #5</td>
+                                <td class="comment-author">Usuário 5</td>
+                                <td class="comment-status">Em revisão</td>
+                                <td class="comment-actions">
+                                    <button class="button button-secondary">Aprovar</button>
+                                    <button class="button button-outline">Reprovar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <section class="bottom-categories-section">
+        <div class="container all-categories-grid">
+            <a href="#" class="category-tag">instagram</a>
+            <a href="#" class="category-tag">Work</a>
+            <a href="#" class="category-tag">Bags</a>
+            <a href="#" class="category-tag">Lamp</a>
+            <a href="#" class="category-tag">Books</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">&copy; 2023 HABIT. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

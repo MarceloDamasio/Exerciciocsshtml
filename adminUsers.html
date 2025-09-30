@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HABIT - Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,19 +12,19 @@
             <a href="#" class="logo">HABIT</a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="home.html" class="category-tag">Início</a></li>
+                    <li><a href="home.html">Início</a></li>
                     <li><a href="paginas.html">Páginas</a></li>
-                    <li><a href="destaques.html" class="category-tag">Destaques</a></li>
-                    <li><a href="newsletter.html" class="category-tag">Assinar</a></li>
-                    <li><a href="adminCategorias.html" class="category-tag">Admin</a></li>
+                    <li><a href="destaques.html">Destaques</a></li>
+                    <li><a href="newsletter.html">Assinar</a></li>
+                    <li><a href="adminCategorias.html">Admin</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
                 <form class="search-form">
-                    <input type="search" placeholder="Buscar..." aria-label="Buscar no site">
-                    <button type="submit" aria-label="Pesquisar">
-                        <!-- Ícone de busca (SVG ou Font Awesome) -->
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <label for="header-search" class="visually-hidden">Buscar</label>
+                    <input type="search" id="header-search" placeholder="Buscar..." aria-label="Buscar no site">
+                    <button type="submit" aria-label="Realizar busca">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     </button>
                 </form>
                 <a href="#" class="button button-outline">Buscar</a>
@@ -36,10 +33,10 @@
         </div>
     </header>
 
-    <div class="main-wrapper container">
+    <div class="container main-wrapper">
         <aside class="sidebar">
-            <nav class="menu">
-                <h2>Menu</h2>
+            <h2 class="section-subtitle">Menu</h2>
+            <nav class="sidebar-nav">
                 <ul>
                     <li><a href="adminCategorias.html">Categorias</a></li>
                     <li><a href="adminCriarPost.html">Criar Post</a></li>
@@ -67,51 +64,65 @@
                 </div>
                 <div class="stat-card">
                     <span class="stat-value">7</span>
-                    <span class="stat-label">Tendências</span>
+                    <span class="stat-label">Pendências</span>
                 </div>
             </section>
 
             <section class="categories-management">
-                <h2>Categorias</h2>
+                <h2 class="section-subtitle">Usuários</h2>
                 <div class="search-category">
-                    <input type="search" placeholder="Buscar categorias..." aria-label="Buscar categorias">
-                    <button class="button button-primary">Buscar</button>
+                    <label for="user-search" class="visually-hidden">Buscar usuário</label>
+                    <input type="search" id="user-search" placeholder="Buscar..." aria-label="Buscar usuário">
                 </div>
-
                 <div class="category-list">
                     <div class="category-item">
-                        <span class="category-name">Categoria #1</span>
+                        <div class="category-info">
+                            <span class="category-name">Usuário #1</span>
+                            <span class="post-meta">email@teste.com</span>
+                        </div>
+                        <span class="post-meta">Ativo</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-primary">Bloquear</button>
                         </div>
                     </div>
                     <div class="category-item">
-                        <span class="category-name">Categoria #2</span>
+                        <div class="category-info">
+                            <span class="category-name">Usuário #2</span>
+                            <span class="post-meta">email@teste.com</span>
+                        </div>
+                        <span class="post-meta">Ativo</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-primary">Bloquear</button>
                         </div>
                     </div>
                     <div class="category-item">
-                        <span class="category-name">Categoria #3</span>
+                        <div class="category-info">
+                            <span class="category-name">Usuário #3</span>
+                            <span class="post-meta">email@teste.com</span>
+                        </div>
+                        <span class="post-meta">Bloqueado</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-secondary">Desbloquear</button>
                         </div>
                     </div>
                     <div class="category-item">
-                        <span class="category-name">Categoria #4</span>
+                        <div class="category-info">
+                            <span class="category-name">Usuário #4</span>
+                            <span class="post-meta">email@teste.com</span>
+                        </div>
+                        <span class="post-meta">Ativo</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-primary">Bloquear</button>
                         </div>
                     </div>
                     <div class="category-item">
-                        <span class="category-name">Categoria #5</span>
+                        <div class="category-info">
+                            <span class="category-name">Usuário #5</span>
+                            <span class="post-meta">email@teste.com</span>
+                        </div>
+                        <span class="post-meta">Ativo</span>
                         <div class="category-actions">
-                            <button class="button button-secondary">Editar</button>
-                            <button class="button button-outline">Excluir</button>
+                            <button class="button button-primary">Bloquear</button>
                         </div>
                     </div>
                 </div>
@@ -130,7 +141,7 @@
                     <li><a href="#">Books</a></li>
                 </ul>
             </nav>
-            <p class="copyright">&copy; 2025 Meu Site • Meu site</p>
+            <p class="copyright">© 2025 Meu Site • Meu site</p>
         </div>
     </footer>
 </body>
