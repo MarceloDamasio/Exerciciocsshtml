@@ -1,58 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 :root {
-    /* Cores */
-    --color-primary: #09bb92; /* Exemplo, ajustar conforme design */
-    --color-secondary: #6c757d; /* Exemplo, ajustar conforme design */
+    
+    --color-primary: #09bb92; 
+    --color-secondary: #6c757d; 
     --color-text-dark: #333;
     --color-text-light: #666;
     --color-background-light: #f8f9fa;
     --color-border: #dee2e6;
     --color-white: #fff;
-    --color-button-primary-bg: #09bb92; /* Exemplo baseado no azul da imagem */
+    --color-button-primary-bg: #09bb92; 
     --color-button-primary-text: #fff;
-    --color-button-secondary-bg: #e8f0fe; /* Exemplo baseado no azul claro da imagem */
-    --color-button-secondary-text: #09bb92; /* Corrigido para usar a primária */
-    --color-category-tag-bg: #f2f2f2; /* Cinza claro das tags */
-    --color-category-tag-text: #333; /* Cor do texto das tags */
-    --color-header-search-bg: #f1f3f4; /* Cor de fundo do input de busca */
-    --color-header-search-border: #dadce0; /* Cor da borda do input de busca */
-    --color-card-bg: #fff; /* Fundo dos cards de estatísticas e categorias (adicionado) */
-    --color-card-border: #e0e0e0; /* Borda dos cards (adicionado) */
+    --color-button-secondary-bg: #e8f0fe; 
+    --color-button-secondary-text: #09bb92; 
+    --color-category-tag-bg: #f2f2f2; 
+    --color-category-tag-text: #333; 
+    --color-header-search-bg: #f1f3f4; 
+    --color-header-search-border: #dadce0; 
+    --color-card-bg: #fff; 
+    --color-card-border: #e0e0e0; 
 
-    /* Escala tipográfica */
-    --font-size-h1: 2.5rem;   /* ~40px */
-    --font-size-h2: 2rem;     /* ~32px */
-    --font-size-h3: 1.5rem;   /* ~24px */
-    --font-size-body: 1rem;   /* ~16px */
-    --font-size-small: 0.875rem; /* ~14px */
-    --font-size-xsmall: 0.75rem; /* ~12px para meta info */
+    
+    --font-size-h1: 2.5rem;   
+    --font-size-h2: 2rem;     
+    --font-size-h3: 1.5rem;   
+    --font-size-body: 1rem;   
+    --font-size-small: 0.875rem; 
+    --font-size-xsmall: 0.75rem; 
 
-    /* Pesos de fonte */
+    
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
 
-    /* Line height */
+    
     --line-height-heading: 1.2;
     --line-height-body: 1.5;
 
-    /* Escala de espaçamento */
-    --space-xxs: 0.125rem; /* 2px */
-    --space-xs: 0.25rem;   /* 4px */
-    --space-sm: 0.5rem;    /* 8px */
-    --space-md: 1rem;      /* 16px */
-    --space-lg: 1.5rem;    /* 24px */
-    --space-xl: 2rem;      /* 32px */
-    --space-xxl: 3rem;     /* 48px */
-    --space-xxxl: 4rem;    /* 64px */
 
-    /* Border Radius */
-    --border-radius-sm: 0.25rem; /* 4px */
-    --border-radius-md: 0.5rem;  /* 8px */
+    --space-xxs: 0.125rem; 
+    --space-xs: 0.25rem;   
+    --space-sm: 0.5rem;    
+    --space-md: 1rem;      
+    --space-lg: 1.5rem;    
+    --space-xl: 2rem;      
+    --space-xxl: 3rem;     
+    --space-xxxl: 4rem;    
+
+    
+    --border-radius-sm: 0.25rem; 
+    --border-radius-md: 0.5rem;  
 }
 
-/* Reset básico e estilos globais */
+
 * {
     margin: 0;
     padding: 0;
@@ -67,13 +67,13 @@ body {
 }
 
 a {
-    color: var(--color-text-dark); /* Cor de link padrão */
+    color: var(--color-text-dark); 
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: var(--color-button-primary-bg); /* Fica verde só no hover */
-    text-decoration: underline; /* opcional */
+    color: var(--color-button-primary-bg); 
+    text-decoration: underline; 
 }
 
 ul {
@@ -83,10 +83,10 @@ ul {
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Remove o espaço extra abaixo da imagem */
+    display: block; 
 }
 
-/* Utilitários de Acessibilidade */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -98,7 +98,7 @@ img {
     border: 0;
 }
 
-/* Container para centralizar conteúdo */
+
 .container {
     max-width: 100%;
     padding-left: var(--space-md);
@@ -107,7 +107,7 @@ img {
     margin-right: auto;
 }
 
-/* Botões */
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -126,20 +126,20 @@ img {
 }
 
 .button-primary:hover, .button-primary:focus {
-    background-color: #075644; /* Tom mais escuro para hover */
+    background-color: #075644; 
     text-decoration: none;
 }
 
 .button-secondary {
     background-color: var(--color-button-secondary-bg);
-    color: var(--color-button-primary-bg); /* Cor do texto é a primária (ajustado) */
-    border-color: var(--color-button-secondary-bg); /* Para consistência */
-    padding: var(--space-xs) var(--space-md); /* Ajuste para botões de categoria (do segundo CSS) */
-    font-size: var(--font-size-small); /* Do segundo CSS */
+    color: var(--color-button-primary-bg); 
+    border-color: var(--color-button-secondary-bg); 
+    padding: var(--space-xs) var(--space-md); 
+    font-size: var(--font-size-small); 
 }
 
 .button-secondary:hover, .button-secondary:focus {
-    background-color: #d1e2f8; /* Tom mais escuro para hover */
+    background-color: #d1e2f8; 
     text-decoration: none;
 }
 
@@ -147,8 +147,8 @@ img {
     background-color: transparent;
     color: var(--color-button-primary-bg);
     border: 1px solid var(--color-button-primary-bg);
-    padding: var(--space-sm) var(--space-md); /* Ajuste para caber no header */
-    font-size: var(--font-size-body); /* Do segundo CSS */
+    padding: var(--space-sm) var(--space-md); 
+    font-size: var(--font-size-body); 
 }
 
 .button-outline:hover, .button-outline:focus {
@@ -157,7 +157,7 @@ img {
     text-decoration: none;
 }
 
-/* Títulos de seção (do primeiro CSS, mantidos para outras seções) */
+
 .section-title {
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-semibold);
@@ -172,7 +172,7 @@ img {
     margin-bottom: var(--space-lg);
 }
 
-/* Header */
+
 .main-header {
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-border);
@@ -183,7 +183,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: var(--space-md); /* Espaçamento entre itens do header */
+    gap: var(--space-md); 
 }
 
 .logo {
@@ -191,11 +191,11 @@ img {
     font-weight: var(--font-weight-semibold);
     color: var(--color-text-dark);
     text-decoration: none;
-    white-space: nowrap; /* Impede quebras de linha (do segundo CSS) */
+    white-space: nowrap; 
 }
 
 .main-nav {
-    display: none; /* Esconde o nav por padrão em mobile (do segundo CSS) */
+    display: none; 
 }
 
 .main-nav ul {
@@ -206,7 +206,7 @@ img {
 .main-nav a {
     color: var(--color-text-light);
     font-weight: var(--font-weight-medium);
-    padding: var(--space-xxs) 0; /* Espaço para hover */
+    padding: var(--space-xxs) 0; 
     position: relative;
 }
 
@@ -237,7 +237,7 @@ img {
     font-size: var(--font-size-body);
     color: var(--color-text-dark);
     outline: none;
-    width: 100px; /* Largura inicial menor */
+    width: 100px; 
     transition: width 0.3s ease;
 }
 
@@ -246,7 +246,7 @@ img {
 }
 
 .search-form input[type="search"]:focus {
-    width: 150px; /* Expande ao focar */
+    width: 150px; 
 }
 
 .search-form button {
@@ -255,16 +255,16 @@ img {
     cursor: pointer;
     color: var(--color-text-light);
     padding: 0 var(--space-xxs);
-    display: flex; /* Para alinhar o SVG */
+    display: flex; 
 }
 
 .search-form button:hover, .search-form button:focus {
     color: var(--color-button-primary-bg);
-    outline: 2px solid var(--color-button-primary-bg); /* Acessibilidade */
+    outline: 2px solid var(--color-button-primary-bg); 
     outline-offset: 2px;
 }
 
-/* MAIN content sections (do primeiro CSS - mantido para páginas de blog/artigos) */
+
 .topics-section {
     padding-top: var(--space-xxxl);
     padding-bottom: var(--space-xxl);
@@ -288,11 +288,10 @@ img {
     padding-bottom: var(--space-xxl);
 }
 
-/* Popular Categories */
 .categories-grid {
     display: grid;
     gap: var(--space-lg);
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsivo para 3 colunas */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
 }
 
 .category-card {
@@ -301,10 +300,10 @@ img {
     border-radius: var(--border-radius-md);
     padding: var(--space-lg);
     display: flex;
-    align-items: flex-end; /* Alinha o título à base do card */
-    min-height: 150px; /* Altura mínima para os cards */
+    align-items: flex-end; 
+    min-height: 150px; 
     position: relative;
-    overflow: hidden; /* Para garantir que o h3 não vaze */
+    overflow: hidden; 
 }
 
 .category-card h3 {
@@ -314,7 +313,7 @@ img {
     margin: 0;
 }
 
-/* All Categories */
+
 .all-categories-grid {
     display: flex;
     flex-wrap: wrap;
@@ -328,20 +327,20 @@ img {
     border-radius: var(--border-radius-sm);
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-medium);
-    white-space: nowrap; /* Impede quebras de linha dentro da tag */
+    white-space: nowrap; 
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .category-tag:hover, .category-tag:focus {
-    background-color: #dcdcdc; /* Um pouco mais escuro no hover */
+    background-color: #dcdcdc; 
     text-decoration: none;
 }
 
-/* Featured Posts and Editor Picks */
+
 .main-content-grid {
     display: grid;
-    gap: var(--space-xxl); /* Espaçamento entre as colunas */
-    grid-template-columns: 1fr; /* Padrão mobile: uma coluna */
+    gap: var(--space-xxl); 
+    grid-template-columns: 1fr; 
 }
 
 .featured-posts .section-subtitle {
@@ -364,11 +363,11 @@ img {
 }
 
 .post-thumbnail {
-    width: 100px; /* Largura fixa para o thumbnail */
+    width: 100px; 
     height: 80px;
-    background-color: var(--color-background-light); /* Placeholder */
+    background-color: var(--color-background-light); 
     border-radius: var(--border-radius-sm);
-    flex-shrink: 0; /* Impede que o thumbnail encolha */
+    flex-shrink: 0; 
 }
 
 .post-info h3 {
@@ -405,7 +404,7 @@ img {
 }
 
 .editor-picks .section-subtitle {
-    font-size: var(--font-size-h3); /* Ajustar para ser menos proeminente que o h2 */
+    font-size: var(--font-size-h3); 
     margin-bottom: var(--space-md);
 }
 
@@ -418,7 +417,7 @@ img {
 .editor-picks li a {
     color: var(--color-text-dark);
     font-size: var(--font-size-body);
-    display: block; /* Para ter padding e melhor área de clique */
+    display: block; 
     padding: var(--space-xxs) 0;
 }
 
@@ -426,12 +425,12 @@ img {
     color: var(--color-button-primary-bg);
 }
 
-/* Estilos para a seção de Newsletter */
+
 .newsletter-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh; /* Para centralizar verticalmente na tela */
+    min-height: 50vh; 
     padding: var(--space-xxl) 0;
 }
 
@@ -440,9 +439,9 @@ img {
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-md);
     padding: var(--space-xl) var(--space-xxl);
-    max-width: 500px; /* Largura máxima do card */
+    max-width: 500px;
     width: 100%;
-    text-align: left; /* Ajuste para o texto dentro do card */
+    text-align: left; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -523,17 +522,17 @@ img {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
-    margin-bottom: var(--space-xs); /* Espaço antes do botão */
+    margin-bottom: var(--space-xs);
 }
 
 .checkbox-container input[type="checkbox"] {
-    /* Estilos básicos para o checkbox, pode ser customizado */
+    
     width: 18px;
     height: 18px;
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-xs);
     cursor: pointer;
-    flex-shrink: 0; /* Não permite que o checkbox encolha */
+    flex-shrink: 0; 
 }
 
 .checkbox-container label {
@@ -543,28 +542,28 @@ img {
 }
 
 .newsletter-form .button-primary {
-    width: auto; /* Botão não ocupa 100% por padrão, ajuste se precisar */
-    align-self: flex-start; /* Alinha o botão à esquerda */
-    padding: var(--space-sm) var(--space-xl); /* Ajuste de padding para o botão */
+    width: auto; 
+    align-self: flex-start; 
+    padding: var(--space-sm) var(--space-xl); 
 }
 
-/* Estilos para a seção de categorias inferiores */
+
 .bottom-categories-section {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xxl);
-    margin-top: var(--space-xxl); /* Espaço entre o newsletter e as tags */
+    margin-top: var(--space-xxl); 
 }
 
-/* Layout Principal do Dashboard (Adicionado do segundo CSS) */
+
 .main-wrapper {
     display: grid;
-    grid-template-columns: 1fr; /* Coluna única para mobile */
+    grid-template-columns: 1fr; 
     gap: var(--space-lg);
     padding-top: var(--space-lg);
     padding-bottom: var(--space-lg);
 }
 
-/* Sidebar (Adicionado do segundo CSS) */
+
 .sidebar {
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
@@ -600,14 +599,14 @@ img {
     text-decoration: none;
 }
 
-/* Main Content (Adicionado do segundo CSS) */
+
 .main-content {
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
 }
 
-/* Dashboard Stats (Adicionado do segundo CSS) */
+
 .dashboard-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -642,7 +641,7 @@ img {
     letter-spacing: 0.05em;
 }
 
-/* Categories Management (Adicionado do segundo CSS) */
+
 .categories-management {
     background-color: var(--color-card-bg);
     border: 1px solid var(--color-card-border);
@@ -681,7 +680,7 @@ img {
 
 .search-category .button-primary {
     padding: var(--space-sm) var(--space-md);
-    white-space: nowrap; /* Evita que o texto "Buscar" quebre */
+    white-space: nowrap; 
 }
 
 .category-list {
@@ -714,30 +713,29 @@ img {
 }
 
 .category-actions .button {
-    padding: var(--space-xs) var(--space-md); /* Ajusta o padding para os botões menores */
+    padding: var(--space-xs) var(--space-md); 
     font-size: var(--font-size-small);
 }
 
 
-/* Footer */
+
 .main-footer {
     background-color: var(--color-white);
     border-top: 1px solid var(--color-border);
     padding: var(--space-lg) 0;
-    /* Remover margin-top padrão se a seção de categorias inferiores já estiver com espaço */
-    margin-top: var(--space-xxl); /* Mantém o padrão do segundo CSS, ajuste se conflitar com bottom-categories */
+    margin-top: var(--space-xxl); 
 }
 
 .footer-content {
     display: flex;
-    flex-direction: column; /* Padrão mobile: coluna (ajustado para mobile-first) */
+    flex-direction: column; 
     align-items: center;
     gap: var(--space-md);
 }
 
 .footer-nav ul {
     display: flex;
-    flex-wrap: wrap; /* Para mobile */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: var(--space-lg);
 }
@@ -756,12 +754,11 @@ img {
     font-size: var(--font-size-small);
     color: var(--color-text-light);
     text-align: center;
-    margin-top: var(--space-md); /* Mantido para mobile */
+    margin-top: var(--space-md); 
 }
 
-/* --- Media Queries (Mobile-first) --- */
 
-/* Breakpoint 1: Celulares médios/grandes (min-width: 481px) */
+
 @media (min-width: 481px) {
     .container {
         padding-left: var(--space-xl);
@@ -783,8 +780,7 @@ img {
         gap: var(--space-lg);
     }
 
-    /* Footer ajustado para layout em linha (do segundo CSS, priorizado) */
-    .footer-content {
+      .footer-content {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -799,10 +795,10 @@ img {
 }
 
 
-/* Breakpoint 2: Tablets (min-width: 768px) */
+
 @media (min-width: 768px) {
     .container {
-        max-width: 720px; /* Ajuste para tablets */
+        max-width: 720px; 
         padding-left: var(--space-lg);
         padding-right: var(--space-lg);
     }
@@ -817,11 +813,11 @@ img {
     }
 
     .main-nav {
-        display: block; /* Visível no tablet */
+        display: block; 
     }
 
     .header-actions {
-        margin-left: auto; /* Empurra para a direita */
+        margin-left: auto;
     }
 
     .search-form input[type="search"] {
@@ -837,23 +833,23 @@ img {
     }
 
     .categories-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas em tablets */
+        grid-template-columns: repeat(3, 1fr); 
     }
 
     .main-content-grid {
-        grid-template-columns: 2fr 1fr; /* Duas colunas para posts e picks */
+        grid-template-columns: 2fr 1fr; 
     }
 
-    /* Layout principal com sidebar e conteúdo (do segundo CSS) */
+    
     .main-wrapper {
-        grid-template-columns: 250px 1fr; /* Sidebar de largura fixa, conteúdo flexível */
+        grid-template-columns: 250px 1fr; 
         gap: var(--space-xl);
         padding-top: var(--space-xl);
         padding-bottom: var(--space-xl);
     }
 
     .dashboard-stats {
-        grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+        grid-template-columns: repeat(4, 1fr); 
     }
 
     .categories-management h2 {
@@ -861,10 +857,10 @@ img {
     }
 }
 
-/* Breakpoint 3: Notebooks/desktops (min-width: 1024px) */
+
 @media (min-width: 1024px) {
     .container {
-        max-width: 960px; /* Ajuste para notebooks */
+        max-width: 960px;
     }
 
     .search-form input[type="search"] {
@@ -875,30 +871,30 @@ img {
     }
 
     .main-content-grid {
-        grid-template-columns: 2.5fr 1fr; /* Proporção um pouco diferente para telas maiores */
+        grid-template-columns: 2.5fr 1fr; 
     }
 
-    /* Main wrapper (do segundo CSS) */
+    
     .main-wrapper {
-        grid-template-columns: 280px 1fr; /* Sidebar um pouco maior */
+        grid-template-columns: 280px 1fr; 
         gap: var(--space-xxl);
         padding-top: var(--space-xxl);
         padding-bottom: var(--space-xxl);
     }
 
     .categories-management h2 {
-        font-size: var(--font-size-h2); /* Título um pouco maior */
+        font-size: var(--font-size-h2); 
     }
 }
 
-/* Breakpoint 4: Monitores grandes (min-width: 1440px) */
+
 @media (min-width: 1440px) {
     .container {
-        max-width: 1200px; /* Ajuste para monitores grandes */
+        max-width: 1200px;
     }
 
     .section-title {
-        font-size: calc(var(--font-size-h1) * 1.1); /* Um pouco maior em telas muito grandes */
+        font-size: calc(var(--font-size-h1) * 1.1); 
     }
 
     .section-subtitle {
@@ -906,7 +902,7 @@ img {
     }
 
     .main-header {
-        padding: var(--space-lg) 0; /* Mais padding em telas grandes */
+        padding: var(--space-lg) 0; 
     }
 
     .logo {
@@ -914,7 +910,7 @@ img {
     }
 }
 
-/* Media Queries para ajustar o layout do footer e newsletter (do primeiro CSS) */
+
 @media (max-width: 480px) {
     .newsletter-card {
         padding: var(--space-lg);
@@ -927,11 +923,11 @@ img {
 
     .newsletter-form .button-primary {
         width: 100%;
-        align-self: center; /* Centraliza o botão no mobile */
+        align-self: center; 
     }
 
     .footer-content {
-        flex-direction: column; /* Volta a ser coluna no mobile para o footer */
+        flex-direction: column;
         text-align: center;
     }
 
