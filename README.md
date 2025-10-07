@@ -1,7 +1,7 @@
 # 🌐 Exercício HTML CSS
 
 Projeto criado para praticar a estrutura e o layout de sites usando **HTML** e **CSS puro**.  
-Inclui páginas públicas
+
 
 ---
 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil e Postagens - HABIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo">HABIT</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="paginas.html">Páginas</a></li>
+                    <li><a href="destaques.html">Destaques</a></li>
+                    <li><a href="newsletter.html">Assinar</a></li>
+                    <li><a href="adminCategorias.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." aria-label="Buscar no site">
+                    <button type="submit" aria-label="Buscar"><i class="fas fa-search"></i></button>
+                </form>
+                <a href="buscar.html" class="button button-outline">Buscar</a>
+                <a href="login.html" class="button button-outline">Entrar</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-wrapper">
+        <aside class="sidebar" style="display: none;">
+            <!-- Conteúdo da sidebar, se houver um para esta página específica -->
+        </aside>
+
+        <main class="main-content" style="grid-column: 1 / -1;">
+            <div class="categories-management" style="padding-top: var(--space-lg);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-md);">
+                    <div style="flex: 1;">
+                        <h2 style="font-size: var(--font-size-h2); margin-bottom: var(--space-lg);">Perfil</h2>
+                        <div style="background-color: var(--color-background-light); border-radius: var(--border-radius-sm); height: 120px; width: 120px; margin-bottom: var(--space-md);"></div>
+                        <div style="margin-bottom: var(--space-md);">
+                            <label for="profile-name" class="visually-hidden">Nome</label>
+                            <input type="text" id="profile-name" placeholder="Nome" style="width: 100%; padding: var(--space-md); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); font-size: var(--font-size-body); outline: none;">
+                        </div>
+                        <div style="margin-bottom: var(--space-md);">
+                            <label for="profile-bio" class="visually-hidden">Bio</label>
+                            <textarea id="profile-bio" placeholder="Bio" style="width: 100%; padding: var(--space-md); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); font-size: var(--font-size-body); min-height: 80px; resize: vertical; outline: none;"></textarea>
+                        </div>
+                        <button class="button button-primary" style="width: 100%;">Salvar</button>
+                    </div>
+
+                    <div style="flex: 2;">
+                        <h2 style="font-size: var(--font-size-h2); margin-bottom: var(--space-lg);">Suas Postagens</h2>
+                        <div class="category-list">
+                            <div class="category-item" style="display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-xs);">
+                                <div style="font-size: var(--font-size-xsmall); color: var(--color-text-light);">Rascunho</div>
+                                <div class="category-name" style="font-size: var(--font-size-h3);">Post 1</div>
+                                <div style="background-color: var(--color-background-light); border-radius: var(--border-radius-sm); height: 60px; width: 100%; margin-top: var(--space-sm);"></div>
+                            </div>
+                            <div class="category-item" style="display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-xs);">
+                                <div style="font-size: var(--font-size-xsmall); color: var(--color-text-light);">Publicado</div>
+                                <div class="category-name" style="font-size: var(--font-size-h3);">Post 2</div>
+                                <div style="background-color: var(--color-background-light); border-radius: var(--border-radius-sm); height: 60px; width: 100%; margin-top: var(--space-sm);"></div>
+                            </div>
+                            <div class="category-item" style="display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-xs);">
+                                <div style="font-size: var(--font-size-xsmall); color: var(--color-text-light);">Em análise</div>
+                                <div class="category-name" style="font-size: var(--font-size-h3);">Comentário 1</div>
+                                <div style="background-color: var(--color-background-light); border-radius: var(--border-radius-sm); height: 60px; width: 100%; margin-top: var(--space-sm);"></div>
+                            </div>
+                            <div class="category-item" style="display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-xs);">
+                                <div style="font-size: var(--font-size-xsmall); color: var(--color-text-light);">Publicado</div>
+                                <div class="category-name" style="font-size: var(--font-size-h3);">Comentário 2</div>
+                                <div style="background-color: var(--color-background-light); border-radius: var(--border-radius-sm); height: 60px; width: 100%; margin-top: var(--space-sm);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    </main>
+
+    
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">© 2025 Meu Site • Meu site</p>
+        </div>
+    </footer>
+</body>
+</html>
